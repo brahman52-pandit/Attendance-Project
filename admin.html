@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIT-Attendance System</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>Admin Dashboard</h1>
+        <a href="index.html">Home</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+
+    <!-- Admin Section -->
+    <div class="admin-container">
+        <h2>Manage Faculty & Students</h2>
+
+        <!-- Faculty Management -->
+        <h3>Faculty List</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Dr.niti</td>
+                <td>niti@example.com</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+        </table>
+        
+        <!-- Student Management -->
+        <h3>Student List</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>niti dev</td>
+                <td>2024001</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+        </table>
+
+        <!-- Attendance Reports -->
+        <h3>Attendance Reports</h3>
+        <button onclick="generateReport()">Download Report</button>
+    </div>
+
+    <script>
+        function generateReport() {
+            alert("Downloading attendance report...");
+            // Implement actual download logic
+        }
+    </script>
+
+</body>
+</html>
